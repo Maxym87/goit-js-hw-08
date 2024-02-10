@@ -3,7 +3,7 @@
   --animation-duration: 250ms;
 }
 
-.gallery {
+/* .gallery {
   display: grid;
   max-width: 1140px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -27,8 +27,8 @@
 }
 
 .gallery__image {
-  height: 100%;
-  width: 100%;
+  height: 320px;
+  width: 200px;
   object-fit: cover;
   transition: transform var(--animation-duration) var(--timing-function);
 }
@@ -41,4 +41,36 @@
 
 .gallery__link:hover {
   cursor: zoom-in;
+} */
+
+
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+   box-sizing: border-box;}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  height: auto;
+   border-radius: 5px;
+}
+
+.gallery-image:hover {
+  cursor: url('/css/image/bxs_hand-down.svg'), auto;
 }
