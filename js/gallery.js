@@ -84,3 +84,16 @@ function createGalleryMarkup(images) {
     )
     .join("");
 }
+
+gallery.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (event.target.classList.contains("gallery-image")) {
+    const largeImg = event.target.dataset.source;
+
+    const instance = basicLightbox.create(
+      `<img src="${largeImg}" width="1112" height="640">`
+    );
+    instance.show();
+  }
+});
