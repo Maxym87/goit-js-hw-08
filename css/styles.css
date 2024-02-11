@@ -1,4 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0 auto;
+  background-color: #fafafa;
+width: 1440px;
+  height: 696px;
+}
 
 .gallery {
   list-style: none;
@@ -7,19 +16,22 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1440px;
-  max-height: 696px
+ 
+
 }
 
 .gallery-item {
   width: calc(33.33% - 20px);
   margin: 10px;
    box-sizing: border-box;
+
   }
 
 .gallery-link {
   display: block;
   text-decoration: none;
+    width: 360px;
+      height: 200px;
 }
 
 .gallery-image {
