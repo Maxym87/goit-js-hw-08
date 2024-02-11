@@ -30,5 +30,5 @@
 }
 
 .gallery-image:hover {
-  cursor: url('/css/image/bxs_hand-down.svg'), auto;
+  cursor: url(/css/image/bxs_hand-down.svg), auto;
 }
