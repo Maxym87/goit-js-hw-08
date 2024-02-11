@@ -29,6 +29,6 @@
    border-radius: 5px;
 }
 
-.gallery-image:hover {
-  cursor: url(/css/image/bxs_hand-down.svg), auto;
+.gallery-link:hover {
+  cursor: url(../css/image/bxs_hand-down.svg), auto;
 }
